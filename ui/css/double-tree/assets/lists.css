@@ -1,0 +1,21 @@
+.__dt-children-list-closed {
+    display: none;
+}
+.__dt-children-list-opened {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    border-left: 1px solid var(--layout-color-dark);
+}
+.__dt-children-list-opened > button {
+    padding: 0;
+    margin-bottom: 6px;
+    transition: all .2s;
+}
+.__dt-children-list-opened > button::before {
+    content: "-▶ ";
+    color: var(--layout-color-dark);
+}
+.__dt-children-list-opened > button:hover {
+    color: var(--gradient-color);
+}

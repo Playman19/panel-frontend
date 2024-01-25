@@ -1,0 +1,89 @@
+.viewport-sort-block {
+    width: 92%;
+    margin: 40px auto;
+    padding: 18px;
+    border: 1px solid var(--lightest);
+    background-color: var(--layout-color-light);
+}
+.viewport-sort-block > span {
+    font-weight: 700;
+    font-size: 21px;
+    color: var(--font-theme);
+}
+.viewport-sort-form {
+    margin-top: 24px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+.viewport-sort-form > div {
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+}
+.viewport-sort-form > div > span {
+    margin-bottom: 5px;
+    color: var(--font-theme);
+}
+.viewport-sort-form > div > input {
+    outline: none;
+    padding: 12px 0;
+    text-indent: 12px;
+    border: 1px solid transparent;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.viewport-sort-form > div > input:focus {
+    border: 1px solid var(--font-theme);
+}
+.viewport-sort-DD > button {
+    border: none;
+    outline: none;
+    text-align: center;
+    color: var(--font-default);
+    background-color: var(--layout-color-dark);
+    padding: 5px 0;
+    width: 120px;
+    transition: background-color .3s;
+}
+.viewport-sort-DD > button:hover {
+    background-color: var(--gradient-color);
+}
+.viewport-sort-DD {
+    position: relative;
+}
+.viewport-sort-DD > div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    max-height: 270px;
+    width: 140px;
+    background-color: var(--layout-color-ultralight);
+}
+.viewport-sort-DD > div > button {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--font-theme);
+    color: var(--font-theme);
+    background-color: transparent;
+    padding: 10px 0;
+}
+.vp-sort-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: none;
+    outline: none;
+    background-color: var(--font-theme);
+    color: var(--layout-color-ultralight);
+    padding: 10px 16px;
+    transition: background-color .3s;
+}
+.vp-sort-btn::before {
+    content: "\2713";
+    margin-right: 10px;
+    font-weight: 700;
+}
+.vp-sort-btn:hover {
+    background-color: var(--gradient-color);
+}

@@ -1,0 +1,45 @@
+.layout {
+    display: flex;
+    justify-content: space-between;
+    height: 93.5vh;
+    border: 2px solid var(--layout-color-ultralight);
+}
+.header {
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(var(--layout-color-light), var(--lightest),var(--gradient-color) );
+}
+.header > span {
+    margin-left: 32px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--font-theme);
+}
+.header > div {
+    margin-right: 32px;
+}
+#header-goto-site,
+#header-goto-dev {
+    padding-left: 24px;
+    font-size: 14px;
+    color: var(--font-theme);
+    padding-left: 22px;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: left center;
+    font-weight: 600;
+    transition: all .2s;
+}
+#header-goto-site:hover,
+#header-goto-dev:hover {
+    color: var(--gradient-color);
+}
+#header-goto-site {
+    background-image: url('../svgs/home.svg');
+}
+#header-goto-dev {
+    background-image: url('../svgs/compass.svg');
+    margin-left: 20px;
+}

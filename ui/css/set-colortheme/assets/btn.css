@@ -1,0 +1,21 @@
+.setColorTheme {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.setColorTheme > button {
+    border: none;
+    outline: none;
+    background-color: var(--layout-color-ultralight);
+    padding: 0.8em 1em 0.8em 34px;
+    font-size: 16px;
+    color: var(--font-theme);
+    background-repeat: no-repeat;
+    background-image: url('../../../svgs/sun-svgrepo-com.svg');
+    background-size: 30px;
+    background-position: left center;
+    transition: background-color .2s;
+}
+.setColorTheme > button:hover {
+    background-color: var(--layout-color-light);
+}

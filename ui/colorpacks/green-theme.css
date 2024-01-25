@@ -1,0 +1,10 @@
+:root {
+    --layout-color-light: #228B22; 
+    --layout-color-ultralight: #d1ffd1; 
+    --layout-color-dark: #006400; 
+    --gradient-color: #008000; 
+    --font-default: #FFFFFF; 
+    --font-theme: #004D00; 
+    --lightest: #affaaf;
+    --grey: #97a08f;
+}

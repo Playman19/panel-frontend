@@ -1,0 +1,48 @@
+.xls-body > div,
+.xls-head > div {
+    overflow: hidden;
+    padding: 3px 4px;
+    height: 1em;
+    border-right: 1px solid var(--grey);
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+.xls-head > div {
+    cursor: col-resize;
+}
+.xls-head {
+    color: var(--layout-color-ultralight);
+}
+.xls-body {
+    color: var(--font-theme);
+}
+.xls-body > div {
+    cursor: cell;
+}
+.xls0 {
+    width: 60px;
+}
+.xls1 {
+    width: 90px;
+}
+.xls2 {
+    width: 180px;
+}
+.xls3 {
+    width: 270px;
+}
+.xls4 {
+    width: 360px;
+}
+.xls5 {
+    width: 450px;
+}
+.xls-active {
+    outline: 4px solid red;
+    z-index: 10;
+}

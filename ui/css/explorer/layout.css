@@ -1,0 +1,44 @@
+.explorer-layout {
+    width: 400px;
+    background-color: var(--layout-color-dark);
+    position: relative;
+}
+.explorer-naming {
+    background-color: var(--layout-color-ultralight);
+    color: var(--font-theme);
+    font-weight: 500;
+    width: 120px;
+    text-align: center;
+    padding: 12px 0;
+    position: absolute;
+    left: 126px;
+    top: 18px;
+    z-index: 10;
+    border-bottom: 8px solid var(--layout-color-dark);
+    border-left: 8px solid var(--layout-color-dark);
+    border-right: 8px solid var(--layout-color-dark);
+}
+.explorer-container {
+    width: 340px;
+    margin: 40px auto;
+    height: 600px;
+    padding: 36px 16px 16px 16px;
+    overflow: scroll;
+    background-color: var(--layout-color-ultralight);
+}
+.explorer-default-block > ul > li {
+    width: max-content;
+}
+.explorer-container::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+.explorer-container::-webkit-scrollbar-button {
+    background: var(--layout-color-ultralight);
+}
+.explorer-container::-webkit-scrollbar-track-piece {
+    background: var(--layout-color-ultralight);
+}
+.explorer-container::-webkit-scrollbar-thumb {
+    background: var(--font-theme);
+}

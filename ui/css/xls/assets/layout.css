@@ -1,0 +1,41 @@
+#xls {
+    margin: 0 auto;
+    width: 1100px;
+    height: 480px;
+    overflow: scroll;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+}
+@media(min-width:1800px) {
+    #excel-editor,
+    #xls {
+        width: 1360px;
+    }
+}
+@media(min-width:1700px) and (max-width:1799px) {
+    #excel-editor,
+    #xls {
+        width: 1260px;
+    }
+}
+@media(min-width:1450px) and (max-width:1700px) {
+    #excel-editor,
+    #xls {
+        width: 1100px;
+    }
+}
+#xls::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+#xls::-webkit-scrollbar-button {
+    background: var(--layout-color-ultralight);
+}
+#xls::-webkit-scrollbar-track-piece {
+    background: var(--layout-color-ultralight);
+}
+#xls::-webkit-scrollbar-thumb {
+    background: var(--font-theme);
+}

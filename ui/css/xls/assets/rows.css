@@ -1,0 +1,16 @@
+.xls-body,
+.xls-head {
+    display: flex;
+    border-bottom: 1px solid var(--grey);
+    width: fit-content;
+}
+.xls-head {
+    background-color: var(--gradient-color);
+    
+}
+.xls-body:nth-child(2n) {
+    background-color: var(--lightest);
+}
+.xls-body:nth-child(2n+1) {
+    background-color: var(--layout-color-light);
+}

@@ -1,0 +1,31 @@
+.__changeThemeContainer {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--gradient-color);
+    max-height: 380px;
+    overflow-y: scroll;
+}
+.__changeThemeContainer > button {
+    outline: none;
+    border-bottom: 1px solid var(--gradient-color);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    padding: 12px 0;
+    background-color: var(--layout-color-ultralight);
+    font-weight: 500;
+}
+.__changeThemeContainer::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+.__changeThemeContainer::-webkit-scrollbar-button {
+    background: var(--layout-color-ultralight);
+}
+.__changeThemeContainer::-webkit-scrollbar-track-piece {
+    background: var(--layout-color-ultralight);
+}
+.__changeThemeContainer::-webkit-scrollbar-thumb {
+    background: var(--font-theme);
+}

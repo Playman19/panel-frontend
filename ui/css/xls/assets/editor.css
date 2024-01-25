@@ -1,0 +1,47 @@
+#excel-editor {
+    margin: 0 auto;
+    padding: 16px 0;
+    border: 1px solid var(--layout-color-ultralight);
+}
+#excel-editor > div {
+    display: flex;
+    justify-content: space-between;
+}
+#xls-edit-data {
+    margin-left: 12px;
+    position: relative;
+    padding: 10px 8px 10px 22px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--font-theme);
+    background-color: var(--layout-color-ultralight);
+    border: none;
+    outline: none;
+    transition: all .2s;
+}
+#xls-edit-data::after {
+    content: "\270E";
+    color: var(--font-theme);
+    font-size: 18px;
+    position: absolute;
+    left: 2px;
+    top: 5px;
+    
+}
+#xls-edit-data:hover  {
+    color: var(--layout-color-ultralight);
+    background-color: var(--gradient-color);
+}
+#xls-edit {
+    flex-grow: 1;
+    margin-left: 0;
+    margin-right: 12px;
+    padding: 10px 0;
+    text-indent: 12px;
+    font-size: 16px;
+    color: var(--font-theme);
+    background-color: var(--layout-color-ultralight);
+    border: none;
+    outline: none;
+    border-left: 1px solid var(--layout-color-dark);
+}

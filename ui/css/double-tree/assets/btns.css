@@ -1,0 +1,36 @@
+.dt-children-list > button,
+.dt-parent-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.dt-parent-btn {
+    font-size: 24px;
+    position: relative;
+    overflow: hidden;
+    padding-left: 1em;
+    display: block;
+    color: var(--font-theme);
+    transition: all .2s;
+}
+.dt-parent-btn:hover {
+    color: var(--gradient-color);
+}
+.__dt-parent-btn-closed::before {
+    content: "▶";
+}
+.__dt-parent-btn-opened::before {
+    content: "▼";
+}
+.__dt-parent-btn-closed::before,
+.__dt-parent-btn-opened::before {
+    color: var(--layout-color-dark);
+    font-size: 21px;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: 4px;
+    z-index: 2;
+}
+

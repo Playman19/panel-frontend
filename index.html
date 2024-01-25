@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- ДЛЯ ДВОЙНОГО ДЕРЕВА -->
+    <script src="ui/js/double-tree/setDoubleTree.js" defer></script>
+
+    <!-- ДЛЯ ЦВЕТОВОЙ ТЕМЫ -->
+    <script src="ui/js/color-theme/themeDD.js" defer></script>
+    <script src="ui/js/color-theme/themeConnector.js" defer></script>
+
+    <!-- ДЛЯ ЛРОПДАУНА В ФИЛЬТРЕ -->
+    <script src="ui/js/sort-block/sortDD.js" defer></script>
+
+    <!-- ЭКСЕЛЬ -->
+    <script src="ui/js/xls/getLoremExcel.js" defer></script>
+
+    <link rel="stylesheet" href="ui/global.css">
+
+</head>
+<body>
+    <div class="header">
+        <span>Панель администратора интернет-магазина</span>
+        <div>
+            <a href="#" id="header-goto-site">В магазин</a>
+            <a href="#" id="header-goto-dev">Помощь</a>
+        </div>
+    </div>
+    <div class="layout">
+
+        <!-- ЭКСПЛОРЕР -->
+        <div class="explorer-layout">
+            <div class="explorer-naming">Проводник</div>
+            <div class="explorer-container">
+                <div class="explorer-default-block">
+                    <!-- ОБРАЗЕЦ ДВОЙНОГО ДЕРЕВА -->
+                    <div class="double-tree">
+                        <button class="dt-parent-btn __dt-parent-btn-closed">Категории</button>
+                        <div class="dt-children-list __dt-children-list-closed">
+                            <button>Холодильники</button>
+                            <button>Микроволновки</button>
+                            <button>Утюги</button>
+                            <button>Миксеры</button>
+                            <button>Электродуховки</button>
+                            <button>Морозилки</button>
+                            <button>Коптилки</button>
+                            <button>Газовые плиты</button>
+                        </div>
+                    </div>
+                    <!-- ОБРАЗЕЦ ДВОЙНОГО ДЕРЕВА -->
+                    <div class="double-tree">
+                        <button class="dt-parent-btn __dt-parent-btn-closed">Заказы</button>
+                        <div class="dt-children-list __dt-children-list-closed">
+                            <button>Новые</button>
+                            <button>В процессе</button>
+                            <button>Архив</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ИСТОРИЯ С ИЗМЕНЕНИЕМ ЦВЕТОВОЙ ТЕМЫ -->
+            <div class="setColorTheme">
+                <button id="themeDD">Цветовая тема</button>
+                <!-- ПЕРЕКЛЮЧАТЕЛИ ТЕМЫ ПРИЛОЖЕНИЯ ( СЭЙВЯТСЯ В БРАУЗЕРЕ ) -->
+                <div id="__changeThemeContainer" class="none">
+                    <button id="green-theme">Зелёная тема</button>
+                    <button id="blue-theme">Синяя тема</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-layout">
+            <!-- НЕЙМИНГ ТЕКУЩЕГО ОТОБРАЖЕНИЯ -->
+            <div class="viewport-name-container">
+                <h2>Категории - Коптилки</h2>
+            </div>
+            <!-- СОРТИРОВОЧНАЯ ОТОБРАЖЕНИЯ -->
+            <div class="viewport-sort-block">
+                <span>Фильтры, какой-то крепс</span>
+                <div>
+                    <form action="" class="viewport-sort-form">
+                        <!-- ПОД ДРОПДАУН -->
+                        <div class="viewport-sort-DD">
+                            <span>Сортировка</span>
+                            <button id="setSortDD">По умолчанию</button>
+                            <div class="none" id="sortDD">
+                                <button id="sortDD1">Сначала новые</button>
+                                <button id="sortDD2">Сначала старые</button>
+                                <button id="sortDD3">Сначала дешевле</button>
+                                <button id="sortDD4">Сначала дороже</button>
+                            </div>
+                        </div>
+                        <!-- ПОД ФОРМЫ -->
+                        <div>
+                            <span>Поиск по id</span>
+                            <input type="text" placeholder="Введите id">
+                        </div>
+                        <div>
+                            <span>Поиск по наименованию</span>
+                            <input type="text" placeholder="Введите наименование">
+                        </div>
+                        <!-- САБМИТ -->
+                        <button class="vp-sort-btn">Применить</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- ЭКСЕЛЬКА -->
+                <form action="" id="excel-editor">
+                    <div>
+                        <button id="xls-edit-data">Изменить</button>
+                        <input type="text" id="xls-edit" placeholder="Выберите редактируемую ячейку">
+                        <input type="hidden" name="item-info">
+                    </div>
+                </form>
+                <div id="xls">
+
+                </div>
+        </div>
+
+    </div>
+</body>
+</html>
